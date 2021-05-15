@@ -294,6 +294,10 @@ jmvIndContrasts <- function(
 
     if ( ! missing(dep)) dep <- jmvcore::resolveQuo(jmvcore::enquo(dep))
     if ( ! missing(group)) group <- jmvcore::resolveQuo(jmvcore::enquo(group))
+    if ( ! missing(labels)) labels <- jmvcore::resolveQuo(jmvcore::enquo(labels))
+    if ( ! missing(means)) means <- jmvcore::resolveQuo(jmvcore::enquo(means))
+    if ( ! missing(sds)) sds <- jmvcore::resolveQuo(jmvcore::enquo(sds))
+    if ( ! missing(ns)) ns <- jmvcore::resolveQuo(jmvcore::enquo(ns))
     if (missing(data))
         data <- jmvcore::marshalData(
             parent.frame(),
