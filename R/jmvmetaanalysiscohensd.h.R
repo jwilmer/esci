@@ -245,7 +245,7 @@ jmvMetaAnalysisCohensd <- function(
     d,
     n1,
     n2,
-    moderator,
+    moderator=NULL,
     correct.for.bias = TRUE,
     REorFE = "RE",
     conf.level = 95,
